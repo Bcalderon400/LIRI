@@ -2,21 +2,21 @@ require("dotenv").config()
 
 var Movie = require('./movie')
 
-var movie = new Movie()
+var movie_this = new Movie()
 
 var type = process.argv[2];
 
 var term = process.argv.slice(3).join(" ");
 
 if (!type) {
-    type = 'movie'
+    type = 'movie_this'
 }
 if (!term) {
     term = 'Mr. Nobody'
 }
-if (type === 'movie') {
+if (type === 'movie_this') {
     console.log('Searching........')
-    movie.findMovie(term)
+    movie_this.findMovie(term)
 }
 
 

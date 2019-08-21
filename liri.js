@@ -37,7 +37,7 @@ function UserInputs(search, term) {
 //Bands in Town-----------------------------------------------
 function showConcertInfo(term) {
 
-    var queryUrl = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=codingbootcamp";
+    var queryUrl = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=7b6a2435aeb0995b34d9c9fd5ff0a00a";
 
     request(queryUrl, function(error, response, body) {
         // If the request is successful
